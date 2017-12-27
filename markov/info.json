@@ -1,0 +1,10 @@
+{
+    "AUTHOR" : "Ben (ketnipz)",
+    "SHORT" : "Markov bot",
+    "DESCRIPTION" : "Feature-rich markov bot cog. Can learn from your server messages & rss feeds!",
+    "DISABLED" : false,
+    "NAME" : "Markov",
+    "REQUIREMENTS" : ["markovify", "feedparser"],
+    "TAGS" : ["markov", "bot", "speak", "comedy", "corpus"],
+    "INSTALL_MSG" : "Thank you for installing Markov.\nIf you like my cog please star my repo or post any issues on my github here:\nhttps://github.com/ketnipz/Red-Cogs"
+}
