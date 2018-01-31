@@ -243,7 +243,11 @@ class Markov:
             clean_content = clean_content.replace(mention, str())
 
             inspiration = message.author.display_name if not clean_content else choice(clean_content.split(" "))
-            response = text_model.make_sentence_with_start(inspiration, False)
+
+            try:
+                response = text_model.make_sentence_with_start(inspiration, strict=False)
+            except KeyError:
+                response = None
 
             if response is None:
                 response = text_model.make_short_sentence(140)
